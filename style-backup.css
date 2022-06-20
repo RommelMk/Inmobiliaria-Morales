@@ -1,0 +1,209 @@
+/* Header Style  start*/
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #6c25be;
+}
+
+.brandName {
+    display: inline-block;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+.brandName-index {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header ul li{
+    display: inline-block;
+    text-align: right;
+    font-weight: 100;
+    width: 8rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 40rem;
+}
+/* Header Style end */
+
+.subtitleBox {
+    color: #FFFFFF;
+    font-size: 3rem;
+    text-align: center;
+    padding: 9rem;
+    background-image: url(./Assets/Background-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Operation Style start */
+.operations {
+    background-color: #6c25be;
+    text-align: center;
+    font-size: 2rem;
+    color: #FFFFFF;
+    padding-top: 1rem;
+    padding-bottom: 30rem;
+}
+
+.operationBttn-1 {
+    background-color: #FFFFFF;
+    color: #6c25be;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    width: 9rem;
+}
+
+.operationBttn-2 {
+    background-color: #FFFFFF;
+    color: #6c25be;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    width: 9rem;
+} 
+/* Operation Style end */
+
+/*Footer Style start */
+
+footer ul {
+    margin-top: 4rem;
+    background-color: #6c25be;
+    margin-right: 58rem;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 1rem;
+
+}
+
+footer ul li {
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    padding: 0.5rem;
+    margin-left: 3rem;
+    text-align: left;
+
+}
+
+.mapSample {
+    display: inline-block;
+    padding-left: 75rem;
+    margin-top: -8rem;
+    margin-bottom: 3rem;
+}
+/*Footer Style end */
+
+
+.subtitlePage {
+    color: #6c25be;
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;  
+}
+
+/* Servicios Style start */
+.servicios {
+    color: #6c25be;
+}
+
+.serviciosSub-p {
+    color: #5e5e5e;
+    padding: 2rem
+}
+/* Servicios Style end */
+
+.alphaText {
+    text-align: justify;
+    color: #5e5e5e;
+    padding-left: 50rem;
+    margin-right: 2rem;
+
+}
+
+.betaText {
+    text-align: justify;
+    color: #5e5e5e;
+    padding-right: 50rem;
+    margin-left: 2rem;
+}
+
+.alphaSub {
+    text-align: justify;
+    color: #6c25be;
+    padding-left: 50rem;
+    margin-right: 2rem;
+}
+
+.betaSub {
+    text-align: justify;
+    color: #6c25be;
+    padding-right: 50rem;
+    margin-left: 2rem;
+}
+
+/* formulario de contacto start*/
+
+.form {
+    background: #6c25be;
+    text-align: center;
+    color: #FFFFFF;
+    width: 25rem;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 4rem;
+    border-radius: 1rem;
+}
+
+.formTitle {
+    margin-bottom: 1rem;
+}
+
+.formLine {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1rem;
+}
+
+.buttonSelect {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    color: #5e5e5e;
+    font-size: 1rem;
+}
+
+.check {
+    margin-bottom: 1rem;
+}
+
+/* formulario de contacto end*/
+
+.subtitlePage-beta {
+    color: #6c25be;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.pictures {
+    margin-left: 5rem;
+}
