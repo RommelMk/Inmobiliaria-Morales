@@ -27,12 +27,24 @@ header {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 
 .list > li > a{
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.list li {
+    padding: 0.5rem;
+}
+
+.list li:hover {
+    background-color: #5e5e5e;
+    border: #5e5e5e;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: 1s;
 }
 
 @media screen and (min-width: 768px) {
@@ -46,11 +58,18 @@ header {
     } 
 }
 
-.operation-box {
+.section-background {
     background-image: url("./Assets/Background-img.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.bck-color {
+    background-color: #6c25be;
+}
+
+.operation-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +124,6 @@ footer ul {
     border: none;
     border-radius: 1rem;
     margin-top: 2rem;
-    margin-right: 28rem;
 }
 footer ul li {
     font-size: 1rem;
@@ -113,4 +131,112 @@ footer ul li {
     list-style: none;
     padding: 0.5rem;
     text-align: left;
+}
+
+.subtitlePage {
+    color: #6c25be;
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;  
+}
+
+.form {
+    background: #6c25be;
+    text-align: center;
+    color: #FFFFFF;
+    width: 25rem;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 4rem;
+    border-radius: 1rem;
+}
+
+.formTitle {
+    margin-bottom: 1rem;
+}
+
+.formLine {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1rem;
+}
+
+.buttonSelect {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    color: #5e5e5e;
+    font-size: 1rem;
+}
+
+.check {
+    margin-bottom: 1rem;
+}
+
+/* formulario de contacto end */
+
+/* Servicios Style start */
+.servicios {
+    color: #6c25be;
+    margin-left: 1rem;
+}
+
+.serviciosSub-p {
+    color: #5e5e5e;
+    padding: 2rem
+}
+/* Servicios Style end */
+
+.flex-alpha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: flex-end;
+    margin-right: 5rem;
+}
+
+.flex-beta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: flex-start;
+    margin-left: 5rem;
+}
+
+.alphaText {
+    text-align: justify;
+    color: #5e5e5e;
+}
+
+.betaText {
+    text-align: justify;
+    color: #5e5e5e;
+}
+
+.alphaSub {
+    text-align: justify;
+    color: #6c25be;
+}
+
+.betaSub {
+    text-align: justify;
+    color: #6c25be;
+}
+
+.subtitlePage-beta {
+    color: #6c25be;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.pictures {
+    margin-left: 5rem;
 }
