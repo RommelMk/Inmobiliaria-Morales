@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet"> 
-    <title>Entregable - Clase 02</title>
+    <title>Entregable - Clase 12</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="grid-wrapper">
+<body id="base">
         <!--Inicio de Header con Navbar-->
-        <div class="grid-header">
-            <header> 
-                <h1 class="logo">
-                    <a href="index.html"> GMK Inmobiliaria</a>
+    <header> 
+        <div class="container-fluid">
+          <div class="row"> 
+                <h1 class="col col-sm-12 col-md-6 col-lg-6">
+                    <a class="logo" href="index.html"> GMK Inmobiliaria</a>
                 </h1>
-                <nav class="navbar">
-                  <div>
+                <div class="col col-sm-12 col-md-6 col-lg-6"">
                     <ul class="list">
                         <li>
                             <a href="./Pages/servicios.html">Servicios</a>
@@ -34,35 +35,46 @@
                             <a href="./Pages/contacto.html">Contacto</a>
                          </li>
                     </ul>
-                  </div>
-                </nav>
-            </header>
+                </div>
+          </div>
         </div>
+    </header>
          <!--Fin de header con Navbar-->
-        <div class="grid-body">
-            <section class="operations-header">
-                <h2 class="subtitleBox">
-                    Bienvenidos al futuro de las inversiones inmobiliarias
-                </h2>
-            </section>
-            <div class="operations">
-                <h3>Tipo de operación</h3>
-                <span class="operationBttn-1">Alquileres</span>
-                <span class="operationBttn-2">Ventas</span>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm-12 col-md-12 col-lg-12">
+                <section class="operation-box">
+                    <h2 class="subtitle-box">
+                        Bienvenidos al futuro de las inversiones inmobiliarias
+                    </h2> 
+                </section>
+            </div>
+            <div class="col col-sm-12 col-md-12 col-lg-12">
+                <div class="operations">
+                    <h3>Tipo de operación</h3>
+                    <span class="operationBttn-1">Alquileres</span>
+                    <span class="operationBttn-2">Ventas</span>
+                </div>
             </div>
         </div>
-        <div class="grid-footer">
-            <footer>
-                <ul>
-                    <li>Teléfono: +54 11-1234123</li>
-                    <li>Email: Rommel@gmkinmobiliarias.com.ar</li>
-                    <li>Dirección: Corrientes 1000 - Capital Federal - Oficina 3-C</li>
-                </ul>
-                <div class="mapSample">
-                    <img src="./Assets/Maps-sample.png" alt="Maps Sample" width="280px" height="180px">
-                </div>
-            </footer>
-        </div>
     </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-sm-12 col-md-6 col-lg-8"">
+                    <ul>
+                        <li>Teléfono: +54 11-1234123</li>
+                        <li>Email: Rommel@gmkinmobiliarias.com.ar</li>
+                        <li>Dirección: Corrientes 1000 - Capital Federal - Oficina 3-C</li>
+                    </ul>
+                </div>
+                <div class="col col-sm-12 col-md-6 col-lg-4">
+                    <img class="map-sample" src="./Assets/Maps-sample.png" alt="Maps Sample" width="280px" height="180px">
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
