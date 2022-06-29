@@ -3,33 +3,40 @@
     padding: 0;
     }
     
-body {
+#base {
         font-family: 'Montserrat Alternates', sans-serif;
         background-color: #f0f0f0;
 }
 
-.grid-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 3fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.grid-header { 
-    justify-items: start;
-    align-items: center;
+header {
     padding: 1rem;
     background-color: #6c25be
 }
 
+.logo { 
+    font-weight: 700;
+    padding: 2rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    padding-top: 0.5rem;
+}
+
+.list > li > a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.list li {
+    padding: 0.5rem;
 }
 
 .list li:hover {
@@ -40,10 +47,10 @@ body {
     transition: 1s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .list {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
@@ -51,53 +58,25 @@ body {
     } 
 }
 
-.list > li > a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.navbar { 
-    padding-top: 2rem; 
-}
-
-header {
-    display: grid;
-    grid-template-columns: repeat(2, 3fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-    
-.logo { 
-    font-weight: 700;
-    padding: 2rem;
-    
-}
-
-.logo a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.grid-body { 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr 4fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.grid-body .operations-header {
+.section-background {
     background-image: url("./Assets/Background-img.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.bck-color {
+    background-color: #6c25be;
+}
+
+.operation-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10rem;
 }
 
-.subtitleBox {
+.subtitle-box {
     color: #FFFFFF;
     font-size: 2rem;
     text-align: center;
@@ -112,8 +91,8 @@ header {
 }
 
 .operations h3 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .operationBttn-1 {
@@ -140,25 +119,6 @@ header {
     width: 9rem;
 } 
 
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    margin-top: 2rem;
-}
-
-@media screen and (max-width: 768px) {
-    footer {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        margin-top: 2rem;
-    }
-}
 footer ul {
     background-color: #6c25be;
     border: none;
@@ -170,7 +130,6 @@ footer ul li {
     color: #FFFFFF;
     list-style: none;
     padding: 0.5rem;
-    margin-left: 1rem;
     text-align: left;
 }
 
@@ -233,33 +192,42 @@ footer ul li {
 }
 /* Servicios Style end */
 
+.flex-alpha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: flex-end;
+    margin-right: 5rem;
+}
+
+.flex-beta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: flex-start;
+    margin-left: 5rem;
+}
+
 .alphaText {
     text-align: justify;
     color: #5e5e5e;
-    padding-left: 50rem;
-    margin-right: 2rem;
-
 }
 
 .betaText {
     text-align: justify;
     color: #5e5e5e;
-    padding-right: 50rem;
-    margin-left: 2rem;
 }
 
 .alphaSub {
     text-align: justify;
     color: #6c25be;
-    padding-left: 50rem;
-    margin-right: 2rem;
 }
 
 .betaSub {
     text-align: justify;
     color: #6c25be;
-    padding-right: 50rem;
-    margin-left: 2rem;
 }
 
 .subtitlePage-beta {
