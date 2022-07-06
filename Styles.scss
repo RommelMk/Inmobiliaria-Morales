@@ -2,21 +2,26 @@
     margin: 0;
     padding: 0;
     }
-    
+
 #base {
         font-family: 'Montserrat Alternates', sans-serif;
         background-color: #f0f0f0;
 }
 
+$estilos: (
+    bck-purple: #6c25be,
+    font-white: #FFFFFF
+);
+
 header {
     padding: 1rem;
-    background-color: #6c25be
+    background-color: map-get($estilos, bck-purple);
 }
 
 .logo { 
     font-weight: 700;
     padding: 2rem;
-    color: #FFFFFF;
+    color: map-get($estilos, font-white);
     text-decoration: none;
 }
 
@@ -75,7 +80,7 @@ header {
 }
 
 .subtitle-box {
-    color: #FFFFFF;
+    color: map-get($estilos, font-white);
     font-size: 2rem;
     text-align: center;
 }
@@ -84,7 +89,7 @@ header {
     background-color: #6c25be;
     text-align: center;
     font-size: 1.5rem;
-    color: #FFFFFF;
+    color: map-get($estilos, font-white);
     margin-bottom: 2rem;
 }
 
@@ -93,9 +98,13 @@ header {
     padding-bottom: 2rem;
 }
 
-.operationBttn-1 {
+@mixin colors {
     background-color: #FFFFFF;
-    color: #6c25be;
+    color:#6c25be;
+}
+
+.operationBttn-1 {
+    @include colors();
     border: none;
     border-radius: 1rem;
     font-size: 1.5rem;
@@ -106,8 +115,7 @@ header {
 }
 
 .operationBttn-2 {
-    background-color: #FFFFFF;
-    color: #6c25be;
+    @include colors();
     border: none;
     border-radius: 1rem;
     font-size: 1.5rem;
@@ -211,24 +219,13 @@ footer {
     margin-left: 5rem;
 }
 
-.alphaText {
+.alpha-text {
     text-align: justify;
     color: #5e5e5e;
 }
 
-.betaText {
-    text-align: justify;
-    color: #5e5e5e;
-}
-
-.alphaSub {
-    text-align: justify;
-    color: #6c25be;
-}
-
-.betaSub {
-    text-align: justify;
-    color: #6c25be;
+.beta-text {
+    @extend .alpha-text
 }
 
 .subtitlePage-beta {
@@ -240,4 +237,5 @@ footer {
 
 .pictures {
     margin-left: 5rem;
+    max-width: 100%;
 }

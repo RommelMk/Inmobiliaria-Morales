@@ -1,0 +1,4 @@
+En el index de la página se agregó el SEO y la siguiente información:
+ - Description: Con la etiqueta description, coloqué la siguiente información "Sitio principal de la inmobiliaria GMK, donde se encontrará primeramente los servicios de alquileres y ventas, junto con una vista rápida de las propiedades premium"
+ - Keywords: se agregarón las siguientes Keywords "alquileres, rent, deparments, apartamentos, real estate, casa en alquiler, casa en venta"
+ - Titles: Se modificó el title del index, nosotros, galería, contacto y servicios, cambiandolos a su nombre de función correspondiente y al index se le cambió a "Inmobiliaria GMK"

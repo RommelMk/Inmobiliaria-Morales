@@ -205,24 +205,9 @@ footer ul li {
   margin-left: 5rem;
 }
 
-.alphaText {
+.alpha-text, .beta-text {
   text-align: justify;
   color: #5e5e5e;
-}
-
-.betaText {
-  text-align: justify;
-  color: #5e5e5e;
-}
-
-.alphaSub {
-  text-align: justify;
-  color: #6c25be;
-}
-
-.betaSub {
-  text-align: justify;
-  color: #6c25be;
 }
 
 .subtitlePage-beta {
@@ -234,4 +219,5 @@ footer ul li {
 
 .pictures {
   margin-left: 5rem;
+  max-width: 100%;
 }/*# sourceMappingURL=Styles.css.map */
