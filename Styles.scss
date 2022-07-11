@@ -142,6 +142,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .map-sample {
+        display: none;
+    } 
+}
+
 .subtitlePage {
     color: #6c25be;
     text-align: start;
@@ -200,6 +206,23 @@ footer {
     padding: 2rem
 }
 /* Servicios Style end */
+.img-alpha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: space-between;
+    margin-bottom: 6rem;
+}
+
+.img-beta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: space-between;
+    margin-bottom: 6rem;
+}
 
 .flex-alpha {
     display: flex;
@@ -208,6 +231,8 @@ footer {
     justify-content: end;
     align-content: flex-end;
     margin-right: 5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 .flex-beta {
@@ -217,6 +242,9 @@ footer {
     justify-content: start;
     align-content: flex-start;
     margin-left: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 .alpha-text {
