@@ -9,7 +9,7 @@ alert(formulario);
 console.log(formulario);
 */
 
-
+/*
 let numero = parseInt(prompt("Ingresa el código de 3 digitos"));
 
 if(numero > 999) {
@@ -17,3 +17,12 @@ if(numero > 999) {
 }else {
     alert ("código aceptado");
 }
+*/
+
+
+for (let i = 1; i <= 15; i++){
+    let nombre = prompt("Ingresá tu nombre acá")
+    let mensaje = `${nombre} se te ha asignado el número ${i}`
+    alert (mensaje)
+}
+
