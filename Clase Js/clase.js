@@ -20,9 +20,9 @@ if(numero > 999) {
 */
 
 
-for (let i = 1; i <= 15; i++){
+/* for (let i = 1; i <= 15; i++){
     let nombre = prompt("Ingresá tu nombre acá")
     let mensaje = `${nombre} se te ha asignado el número ${i}`
     alert (mensaje)
 }
-
+ */
