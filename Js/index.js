@@ -1,22 +1,29 @@
-function solicitarDatos (mensaje) {
+const solicitarDatos = (mensaje) => {
     let numero = parseInt(prompt(mensaje));
     return numero;
 }
 
-function calcularInteres (cuotas) {
+const calcularInteres = (cuotas) => {
     let interes = 0;
+    const arrayCuotas = [
+        {cuota: 1, interes: 0},
+        {cuota: 3, interes: 0},
+        {cuota: 6, interes: 5},
+        {cuota: 12, interes: 10},
+        {cuota: 18, interes: 15},
+    ];
     switch (cuotas) {
-        case (1):
-        case (3):
+        case (arrayCuotas[0].cuota):
+        case (arrayCuotas[1].cuota):
             break;
-        case (6):
-            interes = 5;
+        case (arrayCuotas[2].cuota):
+            interes = arrayCuotas[2].interes;
             break;
-        case (12):
-            interes = 10;
+        case (arrayCuotas[3].cuota):
+            interes = arrayCuotas[3].interes;
             break;
-        case (18):
-            interes = 15;
+        case (arrayCuotas[4].cuota):
+            interes = arrayCuotas[4].interes;
             break;
         default: 
             alert("seleccione una cuota correspondiente")
@@ -24,7 +31,7 @@ function calcularInteres (cuotas) {
     return interes;
 }
 
-function calcularCuotas (comision1,cuota1,interes1) {
+const calcularCuotas = (comision1,cuota1,interes1) => {
         let formula = (comision1+(comision1*(interes1/100)))/cuota1;
         return formula;
 }
