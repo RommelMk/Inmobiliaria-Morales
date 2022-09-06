@@ -26,3 +26,23 @@ if(numero > 999) {
     alert (mensaje)
 }
  */
+
+    /*
+    switch (cuotas) {
+        case (arrayCuotas[0].cuota):
+        case (arrayCuotas[1].cuota):
+            interes = arrayCuotas[0,1].interes;
+            break;
+        case (arrayCuotas[2].cuota):
+            interes = arrayCuotas[2].interes;
+            break;
+        case (arrayCuotas[3].cuota):
+            interes = arrayCuotas[3].interes;
+            break;
+        case (arrayCuotas[4].cuota):
+            interes = arrayCuotas[4].interes;
+            break;
+        default: 
+            alert("seleccione una cuota correspondiente")
+    }
+    return interes; */
