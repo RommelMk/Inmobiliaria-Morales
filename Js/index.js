@@ -17,7 +17,12 @@ const calcularInteres = (cuotas) => {
         if (interes !== undefined) {
             return interes.interes;
         }else {
-            alert("seleccione una cuota correspondiente")
+            let calculador = document.getElementById ("calculador");
+            let texto = document.createElement ("p");
+            texto.innerHTML = "Seleccione una cuota correspondiente";
+            document.body.append(texto);
+            calculador.append(texto);
+            /*alert("seleccione una cuota correspondiente")*/
         }
 }
 
@@ -36,7 +41,12 @@ do {
     }
     if (calcular) {
         let formula = calcularCuotas (comision,cuotas,interes);
-        alert (`Usted debe pagar durante ${cuotas} meses el total de = $${formula}`)
+        let calculador = document.getElementById ("calculador");
+        let texto = document.createElement ("p");
+        texto.innerHTML = `Usted debe pagar durante ${cuotas} meses el total de = $${formula}`;
+        document.body.append(texto);
+        calculador.append(texto);
+        /*alert (`Usted debe pagar durante ${cuotas} meses el total de = $${formula}`)*/
     }
 } while (!calcular);
 
