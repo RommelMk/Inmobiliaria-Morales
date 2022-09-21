@@ -1,3 +1,4 @@
+/* Calculadora de cuotas */
 const arrayCuotas = [
     {cuota: 1, interes: 0},
     {cuota: 3, interes: 0},
@@ -20,12 +21,18 @@ data.addEventListener ("submit", (submitData) => {
     let texto = document.createElement("p");
     texto.innerHTML =`Usted debe pagar durante ${cuotaSelect} meses el total de = $${formula}`;
     printData.append(texto);
+    localStorage.setItem ('Historial de operaciones', formula)
+    const result = localStorage.getItem ('Historial de operaciones')
+    console.log(result)
+    const newResult = JSON.parse(result)
 })
 
 const calcularCuotas = (comision1,cuota1,interes1) => {
     const formula = (comision1+(comision1*(interes1/100)))/cuota1;
     return formula;
 }
+/* Sign up y Login */
+
 
 
 /*let data = document.getElementById ("formCalculate")
