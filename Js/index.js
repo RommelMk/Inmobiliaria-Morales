@@ -6,7 +6,7 @@ const arrayCuotas = [
     {cuota: 12, interes: 10},
     {cuota: 18, interes: 15},
 ];
-
+    
 let data = document.getElementById ("formCalculate")
 data.addEventListener ("submit", (submitData) => {
     submitData.preventDefault();
@@ -18,13 +18,12 @@ data.addEventListener ("submit", (submitData) => {
         return interesTraer.cuota == cuotaSelect
     })
     const formula = calcularCuotas(parseInt(comisionInput),parseInt(cuotaSelect),interes.interes);
-    let texto = document.createElement("p");
-    texto.innerHTML =`Usted debe pagar durante ${cuotaSelect} meses el total de = $${formula}`;
-    printData.append(texto);
     localStorage.setItem ('Historial de operaciones', formula)
     const result = localStorage.getItem ('Historial de operaciones')
-    console.log(result)
     const newResult = JSON.parse(result)
+    let texto = document.createElement("p");
+    texto.innerHTML =`Usted debe pagar durante ${cuotaSelect} meses el total de = $${newResult}`;
+    printData.append(texto);
 })
 
 const calcularCuotas = (comision1,cuota1,interes1) => {
