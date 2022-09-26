@@ -12,19 +12,32 @@ data.addEventListener ("submit", (submitData) => {
     submitData.preventDefault();
     let printData = document.getElementById ("printData");
     printData.innerHTML = "";
-    const comisionInput = document.getElementById("comisionCalculate").value;
+    const {value} = document.getElementById("comisionCalculate");
+    const comisionInput = parseInt (value)
+    console.log (typeof comisionInput , comisionInput)
+    const comisionValue = (typeof comisionInput === 'number' && !Number.isNaN (comisionInput)) ? (true) : (false);
+    !comisionValue ? errorText() : calcularText(comisionInput) 
+})
+
+const errorText = () => {
+    let textComision = document.createElement("p");
+    textComision.innerHTML = "Introduzca un valor correspondiente a la comisión";
+    printData.append(textComision);
+}
+
+const calcularText = (comisionInput) => {
     const cuotaSelect = document.getElementById("cuotasSelect").value;
     const interes = arrayCuotas.find(interesTraer => {
         return interesTraer.cuota == cuotaSelect
     })
-    const formula = calcularCuotas(parseInt(comisionInput),parseInt(cuotaSelect),interes.interes);
+    const formula = calcularCuotas(comisionInput,cuotaSelect,interes.interes);
     localStorage.setItem ('Historial de operaciones', formula)
     const result = localStorage.getItem ('Historial de operaciones')
     const newResult = JSON.parse(result)
     let texto = document.createElement("p");
     texto.innerHTML =`Usted debe pagar durante ${cuotaSelect} meses el total de = $${newResult}`;
-    printData.append(texto);
-})
+    printData.append(texto); 
+}
 
 const calcularCuotas = (comision1,cuota1,interes1) => {
     const formula = (comision1+(comision1*(interes1/100)))/cuota1;
