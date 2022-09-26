@@ -14,9 +14,8 @@ data.addEventListener ("submit", (submitData) => {
     printData.innerHTML = "";
     const {value} = document.getElementById("comisionCalculate");
     const comisionInput = parseInt (value)
-    console.log (typeof comisionInput , comisionInput)
-    const comisionValue = (typeof comisionInput === 'number' && !Number.isNaN (comisionInput)) ? (true) : (false);
-    !comisionValue ? errorText() : calcularText(comisionInput) 
+    const comisionTypeIsNumber = (typeof comisionInput === 'number' && !Number.isNaN (comisionInput)) ? (true) : (false);
+    comisionTypeIsNumber ? calcularText(comisionInput) : errorText();
 })
 
 const errorText = () => {
@@ -30,7 +29,7 @@ const calcularText = (comisionInput) => {
     const interes = arrayCuotas.find(interesTraer => {
         return interesTraer.cuota == cuotaSelect
     })
-    const formula = calcularCuotas(comisionInput,cuotaSelect,interes.interes);
+    const formula = calcularCuotas(comisionInput,parseInt(cuotaSelect),interes.interes);
     localStorage.setItem ('Historial de operaciones', formula)
     const result = localStorage.getItem ('Historial de operaciones')
     const newResult = JSON.parse(result)
