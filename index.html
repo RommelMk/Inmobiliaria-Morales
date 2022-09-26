@@ -69,14 +69,15 @@
             <h2>Calculador de cuotas</h2>
             <form class="calculatorForm" id="formCalculate">
                 <input class="calculatorLine" id="comisionCalculate" type="text" name="comision" placeholder="Ingrese el monto de la comisión">
-                <select name="cuotasName" id="cuotasSelect">
+                <select name="cuotasName" class="btnCalculator" id="cuotasSelect">
                     <option value=0 selected="selected">Seleccione una cuota</option>
                     <option value=1>1</option>
                     <option value=3>3</option>
-                    <option value=6>6</option>
-                    <option value=12>12</option>
-                    <option value=18>18</option>
+                    <option value=6>6 +5% de interés</option>
+                    <option value=12>12 +10% de interés</option>
+                    <option value=18>18 +15% de interés</option>
                 </select>
+                <br>
                 <input class="btnCalculator" type="submit" name="Calcular" id="giveResult" value="calcular">
             </form>
             <div id="printData">

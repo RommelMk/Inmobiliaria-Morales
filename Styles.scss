@@ -270,3 +270,31 @@ footer {
 .pictures-sub {
     max-width: 100%;
   }
+
+.calculatorForm {
+    background: #6c25be;
+    text-align: center;
+    color: #FFFFFF;
+    width: 25rem;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 4rem;
+    border-radius: 1rem;
+}
+.calculatorLine {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1rem;
+}
+
+.btnCalculator {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    color: #5e5e5e;
+    font-size: 1rem;
+}
