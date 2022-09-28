@@ -10,10 +10,10 @@ const arrayCuotas = [
 let data = document.getElementById ("formCalculate")
 data.addEventListener ("submit", (submitData) => {
     submitData.preventDefault();
-    let printData = document.getElementById ("printData");
+    let printData = document.getElementById("printData");
     printData.innerHTML = "";
     const {value} = document.getElementById("comisionCalculate");
-    const comisionInput = parseInt (value)
+    const comisionInput = parseInt(value)
     const comisionTypeIsNumber = (typeof comisionInput === 'number' && !Number.isNaN (comisionInput)) ? (true) : (false);
     comisionTypeIsNumber ? calcularText(comisionInput) : errorText();
 })
@@ -33,9 +33,13 @@ const calcularText = (comisionInput) => {
     localStorage.setItem ('Historial de operaciones', formula)
     const result = localStorage.getItem ('Historial de operaciones')
     const newResult = JSON.parse(result)
-    let texto = document.createElement("p");
-    texto.innerHTML =`Usted debe pagar durante ${cuotaSelect} meses el total de = $${newResult}`;
-    printData.append(texto); 
+    // let texto = document.createElement("p");
+    // texto.innerHTML =`Usted debe pagar durante ${cuotaSelect} meses el total de = $${newResult}`;
+    // printData.append(texto); 
+    Swal.fire({
+        icon: 'info',
+        text: `Usted debe pagar durante ${cuotaSelect} meses el total de = $${newResult}`,
+    })
 }
 
 const calcularCuotas = (comision1,cuota1,interes1) => {
@@ -116,6 +120,5 @@ do {
         alert (`Usted debe pagar durante ${cuotas} meses el total de = $${formula}`)
     }
 } while (!calcular);*/
-
 
 
