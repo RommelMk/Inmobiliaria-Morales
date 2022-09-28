@@ -38,7 +38,7 @@ const calcularText = (comisionInput) => {
     // printData.append(texto); 
     Swal.fire({
         icon: 'info',
-        text: `Usted debe pagar durante ${cuotaSelect} meses el total de = $${newResult}`,
+        text: `Usted debe pagar durante ${cuotaSelect} meses el total de = $${newResult.toFixed(2)}`,
     })
 }
 
