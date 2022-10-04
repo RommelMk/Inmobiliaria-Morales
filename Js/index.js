@@ -1,13 +1,27 @@
 /* Calculadora de cuotas */
-const arrayCuotas = [
-    {cuota: 1, interes: 0},
-    {cuota: 3, interes: 0},
-    {cuota: 6, interes: 5},
-    {cuota: 12, interes: 10},
-    {cuota: 18, interes: 15},
-];
-    
-let data = document.getElementById ("formCalculate")
+// const arrayCuotas = [
+//     {cuota: 1, interes: 0},
+//     {cuota: 3, interes: 0},
+//     {cuota: 6, interes: 5},
+//     {cuota: 12, interes: 10},
+//     {cuota: 18, interes: 15},
+// ];
+
+// fetch("js/arrayCuotas.json")
+// .then(response => response.json())
+// .then(data => {
+//     localStorage.setItem('Interes de operacion', JSON.stringify(data));
+// })
+
+const bringData = async() => {
+    const dataInput = await fetch("js/arrayCuotas.json");
+    const dataFinal = await dataInput.json();
+    localStorage.setItem('Interes de operacion', JSON.stringify(dataFinal));
+}
+
+bringData();
+
+let data = document.getElementById("formCalculate")
 data.addEventListener ("submit", (submitData) => {
     submitData.preventDefault();
     let printData = document.getElementById("printData");
@@ -19,19 +33,24 @@ data.addEventListener ("submit", (submitData) => {
 })
 
 const errorText = () => {
-    let textComision = document.createElement("p");
-    textComision.innerHTML = "Introduzca un valor correspondiente a la comisión";
-    printData.append(textComision);
+    // let textComision = document.createElement("p");
+    // textComision.innerHTML = "Introduzca un valor correspondiente a la comisión";
+    // printData.append(textComision);
+    Swal.fire({
+        icon: 'error',
+        text: 'Introduzca un valor correspondiente a la comisión',
+    })
 }
 
 const calcularText = (comisionInput) => {
     const cuotaSelect = document.getElementById("cuotasSelect").value;
-    const interes = arrayCuotas.find(interesTraer => {
+    const interesData = JSON.parse(localStorage.getItem('Interes de operacion'))
+    const interes = interesData.find(interesTraer => {
         return interesTraer.cuota == cuotaSelect
     })
     const formula = calcularCuotas(comisionInput,parseInt(cuotaSelect),interes.interes);
-    localStorage.setItem ('Historial de operaciones', formula)
-    const result = localStorage.getItem ('Historial de operaciones')
+    localStorage.setItem ('Historial de operaciones', formula);
+    const result = localStorage.getItem('Historial de operaciones');
     const newResult = JSON.parse(result)
     // let texto = document.createElement("p");
     // texto.innerHTML =`Usted debe pagar durante ${cuotaSelect} meses el total de = $${newResult}`;
