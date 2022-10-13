@@ -22,7 +22,7 @@ const bringData = async() => {
 bringData();
 
 let data = document.getElementById("formCalculate")
-data.addEventListener ("submit", (submitData) => {
+data.addEventListener("submit", (submitData) => {
     submitData.preventDefault();
     let printData = document.getElementById("printData");
     printData.innerHTML = "";
@@ -49,7 +49,7 @@ const calcularText = (comisionInput) => {
         return interesTraer.cuota == cuotaSelect
     })
     const formula = calcularCuotas(comisionInput,parseInt(cuotaSelect),interes.interes);
-    localStorage.setItem ('Historial de operaciones', formula);
+    localStorage.setItem('Historial de operaciones', formula);
     const result = localStorage.getItem('Historial de operaciones');
     const newResult = JSON.parse(result)
     // let texto = document.createElement("p");
