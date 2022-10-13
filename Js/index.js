@@ -14,7 +14,7 @@
 // })
 
 const bringData = async() => {
-    const dataInput = await fetch("js/arrayCuotas.json");
+    const dataInput = await fetch("Js/arrayCuotas.json");
     const dataFinal = await dataInput.json();
     localStorage.setItem('Interes de operacion', JSON.stringify(dataFinal));
 }
