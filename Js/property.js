@@ -1,7 +1,7 @@
 const propertyArray = [
-    {id: 1, edificio: "Edificio: codigo I", direccion: "Dirección: Salta 1580", piso: "Piso: 1D", precio: "Precio: USD $180.000", distribucion: "Distribución: 4 ambientes", division: "División: 2 cuartos y 2 baños", imagen: "./Assets/Apartment-1.jpg"},
-    {id: 2, edificio: "Edificio: codigo II", direccion: "Dirección: San Juan 2600", piso: "Piso: 4F", precio: "Precio: USD $350.000", distribucion: "Distribución: 6 ambientes", division: "División: 4 cuartos y 2 baños", imagen: "./Assets/Apartment-2.png" },
-    {id: 3, edificio: "Edificio: codigo X", direccion: "Dirección: Rioja 1000", piso: "Piso: 2C", precio: "Precio: USD $110.000", distribucion: "Distribución: 1 ambiente", division: "División: 1 baño", imagen: "./Assets/Apartment-3.png"},
+    {id: 1, edificio: "Edificio: Código I", direccion: "Dirección: Salta 1580", piso: "Piso: 1D", precio: "Precio: USD $180.000", distribucion: "Distribución: 4 ambientes", division: "División: 2 cuartos y 2 baños", imagen: "./Assets/Apartment-1.jpg"},
+    {id: 2, edificio: "Edificio: Código II", direccion: "Dirección: San Juan 2600", piso: "Piso: 4F", precio: "Precio: USD $350.000", distribucion: "Distribución: 6 ambientes", division: "División: 4 cuartos y 2 baños", imagen: "./Assets/Apartment-2.png" },
+    {id: 3, edificio: "Edificio: Código X", direccion: "Dirección: Rioja 1000", piso: "Piso: 2C", precio: "Precio: USD $110.000", distribucion: "Distribución: 1 ambiente", division: "División: 1 baño", imagen: "./Assets/Apartment-3.png"},
 ];
 
 propertyArray.forEach(property => {
