@@ -298,3 +298,31 @@ footer {
     color: #5e5e5e;
     font-size: 1rem;
 }
+
+.rentSample {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.buttonStyle {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    color: #5e5e5e;
+    font-size: 1rem;
+}
+
+.fichita {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: #FFFFFF;
+}

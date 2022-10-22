@@ -46,3 +46,12 @@ if(numero > 999) {
             alert("seleccione una cuota correspondiente")
     }
     return interes; */
+
+    const array = [
+        {"cuota": 1, "interes": 0},
+        {"cuota": 3, "interes": 0},
+        {"cuota": 6, "interes": 5},
+        {"cuota": 12, "interes": 10},
+        {"cuota": 18, "interes": 15}
+    ]
+
